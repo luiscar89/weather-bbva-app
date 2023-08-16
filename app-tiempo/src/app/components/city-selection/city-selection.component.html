@@ -1,0 +1,8 @@
+<section class="selector-wrapper">
+  <select (change)="setCurrentCity($event)" name="cities" id="cities">
+    <option *ngFor="let city of cities" [value]="city.capital">
+      {{ city.capital }}
+    </option>
+  </select>
+</section>
+
